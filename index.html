@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Translation App</title>
+</head>
+<style>
+     /* @font-face {
+        font-family: pirate;
+        src: url(assets/fonts/BOOTERFF.ttf);
+    } */
+    *{
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace
+    }
+    body{
+        padding: 0px;
+        margin: 0px;
+        height: 100vh;
+    }
+    .header{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #865643;
+        margin: 0px;
+        color:#ffffff;
+        padding: 30px 10px;
+        clip-path: polygon(0 0, 100% 0, 100% 44%, 51% 100%, 50% 100%, 0 45%);
+    }
+    .header img{
+      width: 100px;
+      height: 100px;
+      padding: 0px;
+      margin: 0px;
+      padding-bottom: 20px;
+     
+    }
+    .header h1{
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+    textarea{
+        display: block;
+       
+    }
+    label{
+        margin-bottom: 30px;
+        display: block;
+    }
+    #my_button{
+        margin-bottom: 30px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .content button{
+       width:150px;
+       padding:10px;
+       background-color: #865643;
+       border: 2px solid transparent;
+       border-radius: 8px;
+       cursor: pointer;
+       font-size: 18px;
+       font-weight: bold;
+       color: #ffffff;
+       
+    }
+    .content label{
+       margin:40px 10px;
+       
+    }
+    .content textarea{
+        outline: none;
+        width:500px;
+        height:100px;
+        margin:40px 10px;
+        padding: 10px;
+        border:2px solid #865643;
+        box-shadow: 0 0 10px #865643;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .content textarea:focus {
+        border:2px solid #865643;
+    }
+    .content #output{
+        border:2px solid #865643;
+        width:500px;
+        height:100px;
+        overflow-y: auto;
+        overflow-x: auto;
+        box-shadow: 0 0 10px #865643;
+        font-size: 14px;
+        font-weight: 700;
+     
+    }
+    .content p{
+        font-weight: bold;
+    }
+ 
+</style>
+<body>
+
+    <div class="header">
+        <img src="assets/Images/pirate_logo.svg">
+        <h1>Welcome to the Pirate Translation App</h1>
+    </div>
+    <div class="content">
+   
+        <textarea rows="" cols="20" id="my_text" placeholder="Enter your text to be translated to minion app"></textarea>
+
+        <button id="my_button">Translate</button>
+        <p>Your Pirate translated text is here:</p>
+        <div id="output"></div>
+    </div>
+  
+        
+    </div>
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
