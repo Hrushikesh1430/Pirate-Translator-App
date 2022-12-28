@@ -19,7 +19,8 @@ Pirate Translator App Translates your input text to Pirate Translated Text
 
 ## Screenshots
 
-![image](https://user-images.githubusercontent.com/61748949/209804300-c9c94535-3e3b-4a02-90b7-8f7728c5f6d8.png)
+![image](https://user-images.githubusercontent.com/61748949/209805191-d6a2ac24-2c1d-4e29-8cf0-b2423b5325aa.png)
+
 
 ## Technologies
 
